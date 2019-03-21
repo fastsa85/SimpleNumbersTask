@@ -41,12 +41,17 @@ namespace SimpleNumbersTask
             pos = -1;
         }
 
-        private bool isNumberSimple(uint n)
+        /// <summary>
+        /// Check if positive integer is a simple number
+        /// </summary>
+        /// <param name="number">Target number to check</param>
+        /// <returns>True if number is simple. False if number is not simple</returns>
+        private bool isNumberSimple(uint number)
         {
             bool output = true;
-            for (int i = 2; i <= n / 2; i++)
+            for (int i = 2; i <= number / 2; i++)
             {
-                if (n % i == 0)
+                if (number % i == 0)
                 {
                     output = false;
                     break;

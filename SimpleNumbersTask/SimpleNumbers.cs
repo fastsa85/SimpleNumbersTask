@@ -15,6 +15,7 @@ namespace SimpleNumbersTask
         {
             this.arr = arr;
         }
+
         public IEnumerator GetEnumerator()
         {
             return new SimpleNumbersEnumerator(arr);
